@@ -17,6 +17,7 @@ type Item {
 
 type Query {
   items(itemId:String): Item
+  items_multi(items: [String]): [Item]
 }
 
 schema {
